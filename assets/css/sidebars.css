@@ -1,5 +1,4 @@
 .profile-section {
-  position: -webkit-sticky;
   position: sticky;
   top: 3vh;
   height: 93vh;
@@ -8,14 +7,15 @@
 
 .profile-section,
 .main-shadow {
-  -webkit-box-shadow: 22px 20px 46px -6px rgba(0, 0, 0, 0.24);
-  -moz-box-shadow: 22px 20px 46px -6px rgba(0, 0, 0, 0.24);
-  box-shadow: 22px 20px 46px -6px rgba(0, 0, 0, 0.24);
+  box-shadow: 22px 20px 46px -6px rgb(0 0 0 / 24%);
+  box-shadow: 22px 20px 46px -6px rgb(0 0 0 / 24%);
+  box-shadow: 22px 20px 46px -6px rgb(0 0 0 / 24%);
   border: 0;
 }
 
 .content-section {
-  color: #ffffff;
+  color: #fff;
+
   /* overflow-y: scroll; */
 }
 
@@ -41,21 +41,21 @@
 /* Hide scrollbar for IE, Edge and Firefox */
 .scrollspy-example {
   -ms-overflow-style: none;
+
   /* IE and Edge */
   scrollbar-width: none;
+
   /* Firefox */
 }
 
 .menu {
-  position: -webkit-sticky;
   position: sticky;
   top: 4vh;
   height: 94vh;
   display: flex;
-  flex-direction: column;
+  flex-flow: column nowrap;
   align-items: flex-start;
   padding: 5vh 3vh;
-  flex-wrap: nowrap;
   justify-content: center;
 }
 
@@ -71,23 +71,22 @@
 }
 
 .item-menu.active {
-  color: #ffffff;
+  color: #fff;
   border-left: solid #e9e9e9 4px;
 }
 
 #navbar-principal {
   width: 100%;
   display: flex;
-  justify-content: flex-start;
+  place-content: stretch flex-start;
   height: 100%;
-  align-content: stretch;
   align-items: stretch;
 }
 
 
 /* width */
 ::-webkit-scrollbar {
-  width: 0px;
+  width: 0;
   background: transparent;
 }
 
