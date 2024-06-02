@@ -1,5 +1,5 @@
 body {
-  background-color: #000000;
+  background-color: #000;
 }
 
 .navbar {
@@ -11,7 +11,7 @@ body {
   color: #fff;
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (width <= 768px) {
   #menu-slidebar {
     display: none;
   }
@@ -27,12 +27,13 @@ body {
   .sub-title {
     font-size: 12px !important;
   }
+
   .title-section {
     font-size: xx-large !important;
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (width <= 1024px) {
   .links {
     font-size: 12px !important;
   }
@@ -97,12 +98,12 @@ body {
 
 .name {
   font-size: 4vw;
-  color: rgb(255, 255, 255);
+  color: rgb(255 255 255);
 }
 
 .sub-title {
   font-size: 2vw;
-  color: rgba(255, 255, 255, 0.923);
+  color: rgb(255 255 255 / 92.3%);
 }
 
 .links {
